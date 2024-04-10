@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Détails de la vidéo</title>
+</head>
+<body>
+<h1>Détails de la vidéo</h1>
+
+<!-- Affichage des détails de la vidéo -->
+<p>Titre: <span th:text="${vedioWithDetails.title}"></span></p>
+<p>Description: <span th:text="${vedioWithDetails.description}"></span></p>
+<p>URL: <span th:text="${vedioWithDetails.url}"></span></p>
+<p>Date de publication: <span th:text="${vedioWithDetails.datePublication}"></span></p>
+</body>
+</html>

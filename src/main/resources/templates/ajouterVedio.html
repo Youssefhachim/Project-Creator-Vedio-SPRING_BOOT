@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter une védio</title>
+</head>
+<body>
+<h1>Ajouter une védio</h1>
+
+<!-- Formulaire pour ajouter une nouvelle védio -->
+<form th:action="@{/ajouterVedio}" method="post">
+    <label for="url">URL:</label>
+    <input type="text" id="url" name="url" />
+    <label for="description">Description:</label>
+    <textarea id="description" name="description"></textarea>
+    <label for="datePublication">Date de publication:</label>
+    <input type="date" id="datePublication" name="datePublication" />
+    <button type="submit">Ajouter</button>
+</form>
+</body>
+</html>

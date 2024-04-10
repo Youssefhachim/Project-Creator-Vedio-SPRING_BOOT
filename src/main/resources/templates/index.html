@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+</head>
+<body>
+<h1>Bienvenue sur notre plateforme vidéo</h1>
+
+<h2>Liste des vidéos</h2>
+<ul>
+    <!-- Utilisation de Thymeleaf pour itérer sur la liste de vidéos -->
+    <li th:each="video : ${listVedios}">
+        <!-- Affichage du titre de la vidéo -->
+        <a th:href="@{/detailsVedios(id=${vedio.id})}" th:text="${vedio.title}"></a>
+    </li>
+</ul>
+</body>
+</html>
